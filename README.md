@@ -1,8 +1,8 @@
 # DocParser BentoML Serving
-Serving docparser for pdf parsing. **It requires python=3.6**
+Serving docparser (https://github.com/lorenzo-park/DocParser) for pdf parsing.
 
 ## Usage
-Please prepare two virtual environments and it is highly recommend to use Anaconda or virtualenvs, since there are conflicts. In my guess, the reason is the docparser model is built and converted on `tensorflow==1.x` while bentoml is assuming to work on `tensorflow==2.x`. So, serving can be done in python 3.7, but model conversion should be done in python 3.6
+Please prepare **two virtual environments (each for model conversion & serving)** and it is highly recommend to use Anaconda or virtualenvs, since there are conflicts. In my guess, the reason is the docparser model is built and converted on `tensorflow==1.x` while bentoml is assuming to work on `tensorflow==2.x`. So, serving can be done in python 3.7, but model conversion should be done in python 3.6
 
 ### Pre-requisites - H5 Model Conversion to SavedModel format
 1. Create an environment of python 3.6 version.

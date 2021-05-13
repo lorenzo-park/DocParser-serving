@@ -1,5 +1,5 @@
 # DocParser BentoML Serving
-Serving docparser (https://github.com/lorenzo-park/DocParser) for pdf parsing.
+Serving docparser (https://github.com/DS3Lab/DocParser) for pdf parsing.
 
 ## Usage
 Please prepare **two virtual environments (each for model conversion & serving)** and it is highly recommend to use Anaconda or virtualenvs, since there are conflicts. In my guess, the reason is the docparser model is built and converted on `tensorflow==1.x` while bentoml is assuming to work on `tensorflow==2.x`. So, serving can be done in python 3.7, but model conversion should be done in python 3.6

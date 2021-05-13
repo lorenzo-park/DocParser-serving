@@ -30,5 +30,5 @@ Please prepare **two virtual environments (each for model conversion & serving)*
 3. Run `save.ipynb` script for registering bentoml service.
 4. Run serving cli
     ```bash
-    bentoml serve docparser:latest
+    bentoml serve DocparserService:latest
     ```
